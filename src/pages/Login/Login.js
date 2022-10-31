@@ -27,7 +27,7 @@ const Login = () => {
       .then(() => {
         event.target.reset();
         navigate(from, { replace: true });
-        toast.success("Account Create Successfully");
+        toast.success("Account Login Successfully");
       })
       .catch((error) => {
         toast.error(error.message);
@@ -38,7 +38,7 @@ const Login = () => {
     providerSignUp(googleProvider)
       .then(() => {
         navigate(from, { replace: true });
-        toast.success("Account Create Successfully");
+        toast.success("Account Login Successfully");
       })
       .catch((error) => {
         toast.error(error.message);
@@ -49,7 +49,7 @@ const Login = () => {
     providerSignUp(githubProvider)
       .then(() => {
         navigate(from, { replace: true });
-        toast.success("Account Create Successfully");
+        toast.success("Account Login Successfully");
       })
       .catch((error) => {
         toast.error(error.message);
